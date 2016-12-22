@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "outDir": "./release",
+
+    "module": "commonjs",
+
+    //编译的目标文件类型
+    "target": "es5",
+
+    //允许import时, 不使用.default属性名
+    "allowSyntheticDefaultImports": true,
+
+    //编译js时, 同时生成map文件
+    "sourceMap": true,
+
+    //编译js时, 删除注释
+    "removeComments": false,
+
+    //编辑jsx时, 直接转换成后缀为.js文件
+    "jsx": "react",
+
+    //支持decorator
+    "experimentalDecorators": true,
+
+    //编译时所使用的类库
+    "lib": ["dom","es5","scriptHost", "es6"]
+  },
+
+  //用于加速编译
+  //https://github.com/s-panferov/awesome-typescript-loader
+  "awesomeTypescriptLoaderOptions": {
+    "library": "es6",
+    "useBabel": true,
+    "useCache": true
+  },
+
+  "exclude": [
+    "node_modules"
+  ]
+}
